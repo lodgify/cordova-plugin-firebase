@@ -8,10 +8,10 @@
     "url": "https://github.com/lodgify/cordova-plugin-firebase"
   },
   "name": "@lodgify/cordova-plugin-lodgify-firebase",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Cordova plugin for Google Firebase",
   "cordova": {
-    "id": "cordova-plugin-lodgify-firebase",
+    "id": "@lodgify/cordova-plugin-lodgify-firebase",
     "platforms": [
       "android",
       "ios",

@@ -33,7 +33,7 @@ module.exports = {
      * The ID of the plugin; this should match the ID in plugin.xml.
      */
   getPluginId: function () {
-    return "cordova-plugin-lodgify-firebase";
+    return "@lodgify/cordova-plugin-lodgify-firebase";
   },
 
   copyKey: function (platform) {
