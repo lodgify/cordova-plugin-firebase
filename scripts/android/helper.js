@@ -130,7 +130,7 @@ module.exports = {
 
         // remove any lines we added
         buildGradle = buildGradle.replace(
-            /(?:^|\r?\n)(.*)cordova-plugin-firebase*?(?=$|\r?\n)/g,
+            /(?:^|\r?\n)(.*)cordova-plugin-lodgify-firebase*?(?=$|\r?\n)/g,
             ""
         );
 
