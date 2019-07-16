@@ -1,0 +1,26 @@
+version: 2.1
+
+executors:
+  my-executor:
+    docker:
+      - image: circleci/node:10-browsers
+    working_directory: ~/repo
+
+jobs:
+  publish:
+    executor: my-executor
+    steps:
+      - checkout
+      - run:
+          name: Set NPM auth up
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+      - deploy:
+          name: Publish
+          command: npm run version
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - publish:
+          context: global
